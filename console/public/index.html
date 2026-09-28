@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- © 2026 Mathew. All rights reserved. -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#05070a" />
+  <title>ZARYA//CONSOLE</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="crt">
+    <header class="bar">
+      <div class="bar-left">
+        <span class="dot"></span>
+        <span class="title">ZARYA<span class="slash">//</span>CONSOLE</span>
+      </div>
+      <div class="bar-right">
+        <span id="status" class="status">LINK: STANDBY</span>
+        <button id="reset" class="ghost" title="New conversation">RESET</button>
+      </div>
+    </header>
+
+    <main id="log" class="log">
+      <div class="boot">
+        <p>> ZARYA NEURAL LINK INITIALIZING…</p>
+        <p>> ENGINE: claude-code // headless stream</p>
+        <p>> TOOLS: ONLINE // FULL ACCESS</p>
+        <p>> awaiting input, choom_</p>
+      </div>
+    </main>
+
+    <form id="composer" class="composer" autocomplete="off">
+      <span class="prompt">&gt;</span>
+      <textarea id="input" rows="1" placeholder="talk to zarya…" autofocus></textarea>
+      <button id="send" type="submit">SEND</button>
+    </form>
+  </div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
